@@ -15,30 +15,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="981" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Gotcha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZF-I3-c1e">
-                                <rect key="frame" x="320" y="137" width="214" height="132"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gotcha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZF-I3-c1e">
+                                <rect key="frame" x="434" y="142" width="113" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sBs-Ka-U9V">
-                                <rect key="frame" x="239" y="443" width="47" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sBs-Ka-U9V">
+                                <rect key="frame" x="467" y="210" width="47" height="30"/>
                                 <state key="normal" title="Try Me"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nOB-6S-Y1p"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="86O-QB-ijt">
+                                <rect key="frame" x="440.5" y="265" width="100" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Pvc-9u-Sh7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yqY-TS-3nF">
+                                <rect key="frame" x="440.5" y="324" width="100" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="YGM-SL-3LJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="iZF-I3-c1e" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="137" id="D4v-qv-zf1"/>
-                            <constraint firstItem="iZF-I3-c1e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-63.5" id="V0F-1W-k6l"/>
+                            <constraint firstItem="yqY-TS-3nF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Rx-EP-y8q"/>
+                            <constraint firstItem="sBs-Ka-U9V" firstAttribute="top" secondItem="iZF-I3-c1e" secondAttribute="bottom" constant="25" id="Bbe-Qp-4oF"/>
+                            <constraint firstItem="sBs-Ka-U9V" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XbT-Pj-yMf"/>
+                            <constraint firstItem="yqY-TS-3nF" firstAttribute="top" secondItem="86O-QB-ijt" secondAttribute="bottom" constant="25" id="aEB-6U-c6E"/>
+                            <constraint firstItem="86O-QB-ijt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g5r-dZ-cgV"/>
+                            <constraint firstItem="86O-QB-ijt" firstAttribute="top" secondItem="sBs-Ka-U9V" secondAttribute="bottom" constant="25" id="mJ1-Pe-4mJ"/>
+                            <constraint firstItem="iZF-I3-c1e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rPG-A5-Ycm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="iZF-I3-c1e" secondAttribute="bottom" constant="-185" id="vFX-zq-Z1v"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="Gotcha" destination="iZF-I3-c1e" id="aws-Zw-rEK"/>
+                        <outlet property="Text" destination="86O-QB-ijt" id="6W7-4e-XPd"/>
+                        <outlet property="text2" destination="yqY-TS-3nF" id="TL8-Cb-Puo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
